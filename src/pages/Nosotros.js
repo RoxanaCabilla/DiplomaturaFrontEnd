@@ -1,6 +1,6 @@
 import react from 'react';
 
-const NosotrosPage = (props) => {
+const Nosotros = (props) => {
     return (
         <main className="holder">
             <div className="historia">
@@ -34,4 +34,4 @@ const NosotrosPage = (props) => {
         </main>
     );
 }
-export default NosotrosPage;
+export default Nosotros;

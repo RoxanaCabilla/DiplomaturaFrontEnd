@@ -1,11 +1,10 @@
 import{
     Link,
-    link,
     useMatch,
     useResolvedPath
 } from "react-router-dom";
 
-const NavLink = ({ children, to, activeClassName, ClassName, ...props}) => {
+const NavLink = ({ children, to, activeClassName, className, ...props}) => {
     let resolved = useResolvedPath(to);
     let match = useMatch({ path: resolved.pathname, end: true});
     return(
@@ -16,7 +15,6 @@ const NavLink = ({ children, to, activeClassName, ClassName, ...props}) => {
                 {...props}
             >
                 {children}
-            </Link>
         </div>
     );
 }

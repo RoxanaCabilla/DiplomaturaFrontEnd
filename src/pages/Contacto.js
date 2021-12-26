@@ -1,6 +1,6 @@
 import react from 'react';
 
-const ContactoPage = (props) => {
+const Contacto = (props) => {
     <main className="holder">
     <div className="columna left">
         <h2>Contacto Rápido</h2>
@@ -35,4 +35,4 @@ const ContactoPage = (props) => {
     </div>
 </main>
 }
-export default ContactoPage;
+export default Contacto;
