@@ -9,12 +9,13 @@ const NavLink = ({ children, to, activeClassName, className, ...props}) => {
     let match = useMatch({ path: resolved.pathname, end: true});
     return(
         <div>
-            <Link
+            <Link 
                 className={`${className} ${match ? activeClassName: null}`}
                 to= {to}
                 {...props}
             >
                 {children}
+            </Link>
         </div>
     );
 }

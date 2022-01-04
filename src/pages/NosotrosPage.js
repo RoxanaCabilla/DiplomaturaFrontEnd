@@ -1,6 +1,7 @@
 import react from 'react';
+import '../styles/components/pages/NosotrosPage.css';
 
-const Nosotros = (props) => {
+const NosotrosPage = (props) => {
     return (
         <main className="holder">
             <div className="historia">
@@ -34,4 +35,4 @@ const Nosotros = (props) => {
         </main>
     );
 }
-export default Nosotros;
+export default NosotrosPage;

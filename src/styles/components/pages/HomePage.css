@@ -1,0 +1,46 @@
+.homeimg{
+    margin-bottom: 1.5em;
+    /* margin-right: 1.5em; */
+    display: flex;
+    align-items: center;
+    border: 9px solid #635b5b;
+}
+
+.bienvenidos, .testimonios{
+    box-sizing: border-box; /*calcula el ancho y alto total de un elemento.*/
+}
+
+.bienvenidos{
+    width: 75%;
+    padding-right: 2em;
+}
+.testimonios{
+    width: 25%;
+}
+
+.testimonio{
+    background-color: #ccc;
+    padding:1em;
+}
+
+.testimonio .cita{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.4em;
+    display:block;
+}
+
+.testimonio .autor{
+    font-size: 0.7em;
+    text-align: center;
+    margin: 1em 0;
+    display:block;
+}
+
+.contenedor{
+    display: flex;
+    justify-content:space-around;
+    /* align-items:flex-start; */
+    flex-direction: row;
+}
+/*Para poner imagenes como marca de agua --> buscar: background image*/

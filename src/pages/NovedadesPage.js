@@ -1,6 +1,7 @@
 import react from 'react';
+import '../styles/components/pages/NovedadesPage.css';
 
-const Novedades = (props) => {
+const NovedadesPage = (props) => {
     return (
         <main className="holder">
             <h2>Novedades</h2>
@@ -28,4 +29,4 @@ const Novedades = (props) => {
         </main>
     );
 }
-export default Novedades;
+export default NovedadesPage;

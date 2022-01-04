@@ -1,6 +1,7 @@
 import react from 'react';
+import '../styles/components/pages/HomePage.css';
 
-const Home = (props) => {
+const HomePage = (props) => {
     return (
          <main className="holder">
              <div className="contenedor">
@@ -29,4 +30,4 @@ const Home = (props) => {
         </main>
     );
 }
-export default Home;
+export default HomePage;

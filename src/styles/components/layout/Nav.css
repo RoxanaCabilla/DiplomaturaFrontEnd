@@ -1,0 +1,33 @@
+
+nav{
+    background-color:royalblue;
+    margin-bottom: 2em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0%;
+
+}
+
+nav ul li{
+    display: inline-block;
+    width: 16.3%;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none; /*Saca el subrayado*/
+    text-align:center; 
+    display: block; /* Para que el cursor tome todo */
+    padding: 0.2em 0.4em; /*Para que haya un espacio entre el contenido y su borde*/
+}
+
+nav ul li a:hover{
+    background-color: rgba(0,0,0,0.3)}
+
+nav ul li a.activo{
+        background-color:rgba(0,0,0,0.3);
+    }
+    

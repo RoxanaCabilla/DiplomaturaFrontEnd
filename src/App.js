@@ -1,14 +1,16 @@
 // import logo from './logo.svg';
 // import './App.css';
+import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Header from './components/layout/Header';
 import Nav from './components/layout/Nav';
 import Footer from './components/layout/Footer';
-import Home from './pages/Home';
-import Nosotros from './pages/Nosotros';
-import Novedades from './pages/Novedades';
-import Contacto from './pages/Contacto';
+
+import HomePage from './pages/HomePage';
+import NosotrosPage from './pages/NosotrosPage';
+import NovedadesPage from './pages/NovedadesPage';
+import ContactoPage from './pages/ContactoPage';
 
 function App() {
   return (
@@ -16,10 +18,10 @@ function App() {
       <Header/>
       <Nav/>
       <Routes>
-        <Route path="/" exact element={<Home/>} />
-        <Route path="/nosotros" exact element={<Nosotros/>} />
-        <Route path="/novedades" exact element={<Novedades/>} />
-        <Route path="/contacto" exact element={<Contacto/>} />
+        <Route path="/" exact element={<HomePage/>} />
+        <Route path="/nosotros"  exact element={<NosotrosPage/>} />
+        <Route path="/novedades"  exact element={<NovedadesPage/>} />
+        <Route path="/contacto"  exact element={<ContactoPage/>} />
       </Routes>
       <Footer/>
     </Router>
