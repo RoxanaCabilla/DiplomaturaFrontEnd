@@ -1,31 +1,32 @@
-import react from 'react';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+import NovedadItem from '../components/novedades/NovedadItem';
 import '../styles/components/pages/NovedadesPage.css';
 
 const NovedadesPage = (props) => {
+    const [loading, setLoading] = useState(false);
+    const [novedades, setNovedades] = useState([]);
+
+    useEffect(() => {
+        const cargarNovedades = async () => {
+            setLoading(true);
+            const response = await axios.get('http://localhost:3000/api/novedades');
+            setNovedades(response.data);
+            setLoading(false);
+        };
+        cargarNovedades();
+    }, []);
+
     return (
         <main className="holder">
             <h2>Novedades</h2>
-            <div className="novedades">
-                <h3>Pintura a la Tiza</h3>
-                <h4>eQ</h4>
-                <img src="img/Novedades/eQ.jpg" alt="" />
-
-                <p> Terminación ultramate. Capacidad cubritiva y de adherencia a múltiples soportes. Fácil de lijar, no se oxida.</p>
-                <hr></hr>
-            </div>
-            <div className="novedades">
-                <h3>Auriculares</h3>
-                <h4>Noga 904</h4>
-                <img src="img/Novedades/Auriculares.JPG" alt="" />
-                <ul>
-                    <li>Auriculares cerrados supra aurales (on ear) </li>
-                    <li>Auriculares de 4 cm de diámetro </li>
-                    <li>Máximo poder input: 100 mW </li>
-                    <li>Colores: rojo & negro </li>
-                    <li>Cable de 1.2 metros en Y </li>
-                </ul>
-                <hr></hr>
-            </div>
+            {loading ? (
+                <p>Cargando...</p>
+            ) : (
+                novedades.map(item => <NovedadItem key={item.id}
+                    title={item.titulo} subtitle={item.subtitulo}
+                    imagen={item.imagen} body={item.cuerpo} />)
+            )}
         </main>
     );
 }

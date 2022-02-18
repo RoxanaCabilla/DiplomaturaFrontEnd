@@ -1,22 +1,33 @@
-import react from 'react';
 import '../styles/components/pages/HomePage.css';
 
 const HomePage = (props) => {
     return (
-         <main className="holder">
-             <div className="contenedor">
-                <img src="img/home/Portada.jpg" alt="Libreria502" class="homeimg"/>
-                <img src="img/home/Portada2.jpg" alt="Libreria502" class="homeimg"/>
+        <main className="holder">
+            <div className="contenedor">
+               <img src="img/home/Libre3.jpg" alt="Libreria502" className="homeimg" />
+                {/* <img src="img/home/Portada2.jpg" alt="Libreria502" className="homeimg" /> */}
+                {/* <img src="img/home/Portada3.jpg" alt="Libreria502" className="homeimg" /> */}
             </div>
             <div className="columnas">
                 <div className="bienvenidos left">
-                    
-                    <h2>Bienvenidos</h2>
+
+                    <h2>Bienvenidos!</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus beatae adipisci corrupti aspernatur quos qui similique dolores, voluptatem necessitatibus ratione! Quaerat rerum itaque ut iure unde perferendis praesentium assumenda fuga?
+                        Nuestro local está ubicado muy cerca del centro de la ciudad de Ramos Mejía.
+                        En la esquina de Av. San Martín y Pizurno,  a sólo 5 cuadras de la estación de tren.
                     </p>
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores odio, quam animi eligendi dolor neque? Aspernatur sunt exercitationem impedit reprehenderit dolores, consequuntur officiis adipisci a inventore assumenda. Quasi, pariatur inventore.
+                        Tenemos un amplio horario de atención, sobre todo en época escolar.
+                    </p>
+                    <p>
+                        Contamos con varias máquinas fotocopiadorase, impresoras y anilladora para armado de apuntes. 
+                    </p>
+                    <p>
+                        Somos un equipo que desde hace más de 25 años brindamos servicio, productos de calidad y los mejores precios.
+                    </p>
+                    <p>
+                        Estos son algunos de nuestros principales clientes: Bersa, Dole Racing, Lumen Glass, AutoBiz, Club Estudiantil Porteño.
+                        Colegio Jean Piaget, Jardín 901, Instituto Pringles.
                     </p>
                 </div>
                 <div className="testimonios right">
